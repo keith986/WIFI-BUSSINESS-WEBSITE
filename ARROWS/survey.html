@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrownet Survey Platform</title>
+        <!--boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <!--jquery-->
+     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+    <div class="navbar navbar-expand-lg text-light bg-secondary" id="myNavbar">
+        <div class="container-fluid">
+       <div class="navbar-brand" style="max-width: 100px;">
+        <img src="./images/LOGO.png" class="w-100"/>
+     
+       </div>
+       <div class="nav">
+        <div class="navbar-nav">
+            <h5>ARROW NET</h5>
+        </div>
+       </div>
+    </div>
+    </div>
+    <div class="container-sm" style="max-width: 900px;">
+        <div class="row bg-info p-3">
+            <h5 class="d-flex justify-content-center">ArrowNet WiFi Service Satisfaction Survey</h5>
+        </div>
+    </div>
+    <div class="container-sm mb-5" style="max-width: 900px; background: #fff;">
+<p style="font-size: 20px;">We are currently testing our WiFi. It is important for us to get feedback from users so that we can consider any future roll-out of WiFi services.</p>
+<p style="font-size: 20px;">We would appreciate a few moments of your time to answer some questions about your experiences. Thank you for your time and consideration!</p>
+<form method="POST" action="survey.php">
+    <span><strong>Email Address: </strong></span><input type="email" name="email" class="form-control w-100 mb-3" required/>
+    <label><strong>1. Please rate your satisfaction with the new, on-board WiFi System:</strong></label>
+    <br/>
+    
+    <label class="p-2">a. Overall WiFi Service Quality       
+<select class="form-control w-100" name="overall" required>
+    <option class="active disabled"></option>
+    <option>Very Dissatisfied</option>
+    <option>Dissatisfied</option>
+    <option>Neither Satisfied nor Dissatisfied</option>
+    <option>Satisfied</option>
+    <option>Very Satisfied</option>
+</select>
+    </label>
+
+            <label class="p-2">b. Speed of WiFi Service     
+                <select class="form-control w-100" name="overall2" required>
+                    <option class="active disabled"></option>
+                    <option>Very Dissatisfied</option>
+                    <option>Dissatisfied</option>
+                    <option>Neither Satisfied nor Dissatisfied</option>
+                    <option>Satisfied</option>
+                    <option>Very Satisfied</option>
+                </select>
+                    </label>
+<br/>
+                    <label class="p-2">c. WiFi System Signal Coverage      
+                        <select class="form-control w-100" name="overall3" required>
+                            <option class="active disabled"></option>
+                            <option>Very Dissatisfied</option>
+                            <option>Dissatisfied</option>
+                            <option>Neither Satisfied nor Dissatisfied</option>
+                            <option>Satisfied</option>
+                            <option>Very Satisfied</option>
+                        </select>
+                            </label>
+
+                            <label class="p-2">d. Convenience of Service      
+                                <select class="form-control w-100" name="overall4" required>
+                                    <option class="active disabled"></option>
+                                    <option>Very Dissatisfied</option>
+                                    <option>Dissatisfied</option>
+                                    <option>Neither Satisfied nor Dissatisfied</option>
+                                    <option>Satisfied</option>
+                                    <option>Very Satisfied</option>
+                                </select>
+                                    </label>
+
+        <br/><br/>
+        <label>
+ If you selected very dissatisfied or dissatisfied for any of the categories above, can you tell us more:
+ <textarea class="form-control w-100" name="detail" required></textarea>   
+        </label>  
+        <br/><br/><br/>
+        <label>
+            <strong>2. Compared to other free, public WiFi services, is our WiFi service quality better, worse, or about the same?</strong>
+        <br/>
+        <select class="form-control w-100" name="public" required>
+            <option class="active disabled"></option>
+            <option>Much better</option>
+            <option>Somewhat better</option>
+            <option>Slightly better</option>
+            <option>About the same</option>
+            <option>Slightly worse</option>
+            <option>Somewhat worse</option>
+            <option>Much worse</option>
+        </select>
+        </label>
+        <br/><br/>
+        <label>
+            <strong>4. If you experienced problems with the WiFi, was the problem experience on the entire day or on a portion of your day?</strong>
+            <textarea class="form-control w-100" name="problem" required></textarea>   
+        </label>
+        <br/><br/>
+        <label>
+            <strong>5. Please provide any other questions or comments.</strong>
+            <textarea class="form-control w-100" name="comments" required></textarea>   
+        </label>
+        <br/><br/><br/>
+        <input type="submit" class="form-control w-100 btn btn-success mb-5" name="submit" value="SUBMIT"/>
+    </form>
+</div>
+<!---newsletters-->
+<div class="container-sm">
+    <div class="row  mb-3 shadow-lg mx-auto bg-warning" style="max-width: 600px;">
+        <div class="popup">
+            <div class="popup-content">
+<div class="popup-header mt-3 mx-auto">
+<h5 style="font-family: sans;"><strong>ARROWNET FEEDS</strong></h5>
+<p class="mt-3"><i>We keep you updated with our internet service throught our feeds.That includes our location, our offices, our internet services outreach and more.</i></p>
+</div>
+<div class="popup-body bg-light p-3 mb-3">
+    <p><strong>ENTER YOUR EMAIL ADDRESS TO GET OUR FEEDS</strong></p>
+    <form method="POST" action="send.php">
+<span>Email Address</span> : <input type="email" name="email" class="form-control w-100 mb-3" required>
+<input type="submit" class="btn btn-success form-control" name="submit" value="Send"/>
+</form>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <p class="d-flex justify-content-center">&copy; ARROWNET</p>
+</div>
+</body>
+</html>
